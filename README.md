@@ -17,7 +17,6 @@ py -m venv .venv
 python -m pip install -r requirements.txt
 python app.py
 ```
-Open http://127.0.0.1:5000
 
 An internet connection is required to fetch new quotes from the external API.
 
@@ -31,4 +30,4 @@ An internet connection is required to fetch new quotes from the external API.
 ## External API
 `https://dummyjson.com/quotes/random`
 
-The SQLite database `quotes_history.db` is created automatically when the app starts. Do not upload the `.venv` folder to GitHub.
+The SQLite database `quotes_history.db` is created automatically when the app starts.
