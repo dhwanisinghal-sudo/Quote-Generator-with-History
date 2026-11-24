@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quietly | Quote Generator</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"></head>
+<body><div class="glow glow-a"></div><div class="glow glow-b"></div>
+<main class="page">
+<nav class="nav"><a class="logo" href="/"><span class="logo-mark">q.</span><span>quietly<span class="logo-dot">.</span></span></a><span class="nav-tag"><i></i> A DAILY DOSE OF WORDS</span></nav>
+<header class="hero"><div class="hero-copy"><p class="eyebrow">A PAUSE. A THOUGHT. A NEW PERSPECTIVE.</p><h1>Words to keep.<br><em>Wisdom to carry.</em></h1><p class="intro">A good quote can shift your whole day. Discover a fresh thought, save the ones that speak to you, and build your own little library of inspiration.</p><div class="hero-meta"><span>✳ RANDOM INSPIRATION</span><span>✳ YOUR PERSONAL HISTORY</span></div></div>
+<div class="hero-illustration"><div class="sun"></div><div class="book book-back"></div><div class="book book-front"><span>THE<br>ART OF<br><i>THOUGHT</i></span><small>VOL. 01</small></div><span class="spark spark-one">✳</span><span class="spark spark-two">✦</span></div></header>
+<section class="content-grid">
+<div class="generator panel"><div class="panel-top"><div><p class="eyebrow">01 / DISCOVER</p><h2>Today's thought<span>.</span></h2></div><span class="tiny-label">FRESHLY PICKED</span></div>
+<div class="quote-display" aria-live="polite"><span class="quote-mark">“</span><p id="quoteText">The right words can arrive at just the right time. Generate a quote and let a new perspective find you.</p><div class="quote-author" id="quoteAuthor">— YOUR NEXT FAVOURITE QUOTE</div></div>
+<button id="generateButton" class="generate-btn"><span>✳</span> Generate a new quote <b>↗</b></button><p id="status" class="status">Each new quote is automatically added to your history.</p></div>
+<aside class="history panel"><div class="panel-top"><div><p class="eyebrow">02 / YOUR COLLECTION</p><h2>Quote history<span>.</span></h2></div><span id="historyCount" class="count">0 SAVED</span></div>
+<div id="historyList" class="history-list"><div class="empty"><span>✧</span><p>Your saved quotes will appear here.</p><small>Generate your first quote to begin.</small></div></div>
+<button id="refreshButton" class="refresh-btn">↻ Refresh history</button></aside></section>
+<footer><span>QUIETLY <b>✳</b></span><span>A small collection of words worth keeping.</span><span>POWERED BY CURIOSITY</span></footer>
+</main><div id="toast" class="toast" role="status"></div><script src="{{ url_for('static', filename='script.js') }}"></script></body></html>
